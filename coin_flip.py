@@ -1,8 +1,8 @@
 import numpy
 
-
+# coin flip class that would later be used in the pseudo monte carlo simulation
 class CoinFlip:
-
+    
     def __init__(self, probability_win, probability_loss, bet_size, balance, number_of_bets, risk, reward):
         self.probability_win = probability_win
         self.probability_loss = probability_loss
@@ -18,6 +18,8 @@ class CoinFlip:
         self.portfolio = [self.balance]
         self.counter = 0
 
+     
+    # Generating the results of our strategy and storing them as list 
     def flip(self):
         while self.counter < self.number_of_bets:
             outcome = numpy.random.choice(self.win_loss, p=[self.probability_win, self.probability_loss])
