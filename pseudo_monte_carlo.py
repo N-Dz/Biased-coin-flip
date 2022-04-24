@@ -2,7 +2,7 @@ from simulation import Simulation
 import matplotlib.pyplot as pyplot
 
 
-def pseudo_simulation_plot(number_of_simulations, probability_win, probability_loss, bet_size, balance,
+def simulate_and_plot(number_of_simulations, probability_win, probability_loss, bet_size, balance,
                            number_of_bets,
                            risk,
                            reward):
