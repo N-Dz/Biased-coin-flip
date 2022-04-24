@@ -1,7 +1,7 @@
 import numpy
 
 
-class Simulation:
+class CoinFlip:
 
     def __init__(self, probability_win, probability_loss, bet_size, balance, number_of_bets, risk, reward):
         self.probability_win = probability_win
