@@ -19,7 +19,7 @@ class CoinFlip:
         self.counter = 0
 
      
-    # Generating the results of our strategy and storing them as list 
+    # Generating the results of our strategy and storing them in a list 
     def flip(self):
         while self.counter < self.number_of_bets:
             outcome = numpy.random.choice(self.win_loss, p=[self.probability_win, self.probability_loss])
